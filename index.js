@@ -48,7 +48,7 @@ var score = 0;
 
             if (currentCase === 1) {
                 imgElement.src = "images/bravoCase.png";
-            } else if (currentCase === 2) {
+            } else if (currentCase >= 2) {
                 imgElement.src = "images/kato14.png";
             } else {
                 imgElement = "images/case.png"
