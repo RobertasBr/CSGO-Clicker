@@ -47,11 +47,11 @@ var score = 0;
             var imgElement = document.getElementById("caseImage");
 
             if (currentCase === 1) {
-                imgElement.src = "/images/bravoCase.png";
+                imgElement.src = "images/bravoCase.png";
             } else if (currentCase === 2) {
-                imgElement.src = "/images/kato14.png";
+                imgElement.src = "images/kato14.png";
             } else {
-                imgElement = "/images/case.png"
+                imgElement = "images/case.png"
             }
         }
 
@@ -183,7 +183,7 @@ var score = 0;
             var titanImage = document.getElementById("titanImage")
 
             titanImage.style.display = "block";
-            titanImage.src = "/images/titanHolo.png";
+            titanImage.src = "images/titanHolo.png";
             saveProgressToCookies();
         }
 
