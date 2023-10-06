@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/png" href="images/case.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+    </style>
+    <title>CSGO Clicker</title>
+</head>
+<body>
+    <h1>CSGO Clicker</h1>
+    <p>Money: $<span id="score">0</span></p>
+    <p>Money Per Second: <span id="moneyPerSec">0</span></p>
+    <img id="caseImage" src="/images/case.png" alt="case" onclick="addToScore(clickingPower)">
+
+    <div id="buyOptions">
+        <button onclick="buyWeaponDrop()">Weapon Drop [<span id="weaponDropCost">15</span> -- <span id="weaponDrops">0</span>]</button>
+        <button onclick="buyGlock()">Glock-18 [<span id="glockCost">100</span> -- <span id="glock">0</span>]</button>
+        <button onclick="buyNova()">Nova [<span id="novaCost">500</span> -- <span id="nova">0</span>]</button>
+        <button onclick="buyP90()">P90 [<span id="p90Cost">1500</span> -- <span id="p90">0</span>]</button>
+        <button onclick="buyGalil()">Galil [<span id="galilCost">5000</span> -- <span id="galil">0</span>]</button>
+        <button onclick="buyAK47()">AK47 [<span id="ak47Cost">10000</span> -- <span id="ak47">0</span>]</button>
+        <button onclick="buyAWP()">AWP [<span id="awpCost">47500</span> -- <span id="awp">0</span>]</button>
+        <button onclick="buyG3SG1()">G3SG1 [<span id="g3sg1Cost">20000</span> -- <span id="g3sg1">0</span>]</button>
+        <button onclick="upgradeCase()">Upgrade Case <span id="upgradeCost">1000</span><span id="upgradeCase"></span></button>
+        <img id="titanImage" src="/images/titanHolo.png" alt="Titan Holo" style="display: none;">
+    </div>
+        
+    <button id="save" onclick="loadProgressFromCookies()">Load Save</button>
+    <script src="index.js"></script>
+</body>
+</html>
